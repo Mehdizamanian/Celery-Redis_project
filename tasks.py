@@ -1,8 +1,12 @@
 from celery import Celery
 
-app = Celery('tasks',backend='redis://localhost:6379',broker='redis://localhost:6379') #backend redis added for saving funcs results 
+app = Celery('tasks') 
+app.config_from_object('celeryconfig')#configuring celery from celeryconfig.py testing >>> python -m configcelery
 
 
+
+
+""" Tasks Functions """
 @app.task
 def add(x,y):
     return x + y
