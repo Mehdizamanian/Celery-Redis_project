@@ -1,8 +1,5 @@
-from celery import Celery
-
-app = Celery('tasks') 
-app.config_from_object('celeryconfig')#configuring celery from celeryconfig.py testing >>> python -m configcelery
-
+from __future__ import absolute_import , unicode_literals # used while using proj folder 
+from .celery import app
 
 
 
