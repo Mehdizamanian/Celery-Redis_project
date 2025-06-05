@@ -1,4 +1,4 @@
-from tasks import add , divide
+from proj.tasks import add,divide
 
 
 # calling tasks 
