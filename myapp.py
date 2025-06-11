@@ -1,13 +1,13 @@
 from proj.tasks import add,divide
 
 
-# calling tasks 
+""" calling tasks """
 # add.delay(52,1)
 # divide.apply_async([12,4])
 
 
 
-# restoring result in backend needed to be added a backend(redis) and u use get or forget method
+""" restoring result in backend needed to be added a backend(redis) and u use get or forget method """ 
 
 result1 = add.delay(5,5)
 print(result1.get())
@@ -25,6 +25,6 @@ print("proparger used for error handeling and print all ting after caliing a fun
 
 
 
-""" command to run this app """
+""" command & Line Prompt to run this app """
 # active venv
 # python myapp.py

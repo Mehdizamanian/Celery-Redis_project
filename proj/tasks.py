@@ -17,4 +17,4 @@ def divide(x,y):
 
 """commands to run worker and so on """
 # turn on redis on ur pc then actvie venv
-# celery -A tasks worker --loglevel=INFO --pool=solo
+# celery -A proj worker --loglevel=INFO --pool=solo
